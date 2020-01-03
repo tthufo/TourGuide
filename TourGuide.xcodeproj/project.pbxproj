@@ -1,0 +1,863 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04306CE121008AE300CF9AB8 /* TG_Login_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04306CDF21008AE300CF9AB8 /* TG_Login_ViewController.swift */; };
+		04306CE221008AE300CF9AB8 /* TG_Login_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04306CE021008AE300CF9AB8 /* TG_Login_ViewController.xib */; };
+		0431B1E221009C790035FEA6 /* TKDataValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0431B1E121009C780035FEA6 /* TKDataValidator.swift */; };
+		04393E2720FC82C300A75264 /* TG_Search_Result_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04393E2620FC82C300A75264 /* TG_Search_Result_Cell.xib */; };
+		0467B14220F85EAA00A2696C /* TG_Root_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467B14120F85EAA00A2696C /* TG_Root_ViewController.swift */; };
+		0467B14620F85F6B00A2696C /* TG_Room_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467B14420F85F6B00A2696C /* TG_Room_ViewController.swift */; };
+		0467B14720F85F6B00A2696C /* TG_Room_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0467B14520F85F6B00A2696C /* TG_Room_ViewController.xib */; };
+		0467B14A20F85F8E00A2696C /* TG_Favorite_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467B14820F85F8E00A2696C /* TG_Favorite_ViewController.swift */; };
+		0467B14B20F85F8E00A2696C /* TG_Favorite_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0467B14920F85F8E00A2696C /* TG_Favorite_ViewController.xib */; };
+		0467B14E20F85FA600A2696C /* TG_Booking_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467B14C20F85FA600A2696C /* TG_Booking_ViewController.swift */; };
+		0467B14F20F85FA600A2696C /* TG_Booking_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0467B14D20F85FA600A2696C /* TG_Booking_ViewController.xib */; };
+		0467B15220F85FBE00A2696C /* TG_User_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467B15020F85FBE00A2696C /* TG_User_ViewController.swift */; };
+		0467B15320F85FBE00A2696C /* TG_User_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0467B15120F85FBE00A2696C /* TG_User_ViewController.xib */; };
+		0467B15720F8621600A2696C /* TG_Search_Result_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467B15520F8621600A2696C /* TG_Search_Result_ViewController.swift */; };
+		0467B15820F8621600A2696C /* TG_Search_Result_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0467B15620F8621600A2696C /* TG_Search_Result_ViewController.xib */; };
+		0467B16120F87C7F00A2696C /* TG_Room_Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467B15F20F87C7F00A2696C /* TG_Room_Cell.swift */; };
+		0467B16220F87C7F00A2696C /* TG_Room_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0467B16020F87C7F00A2696C /* TG_Room_Cell.xib */; };
+		0467B16420F88A8000A2696C /* Marcro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467B16320F88A8000A2696C /* Marcro.swift */; };
+		0467B16720F8A5D100A2696C /* TG_Room_Cell_N.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0467B16520F8A5D100A2696C /* TG_Room_Cell_N.swift */; };
+		0467B16820F8A5D100A2696C /* TG_Room_Cell_N.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0467B16620F8A5D100A2696C /* TG_Room_Cell_N.xib */; };
+		0467B16A20F8A89900A2696C /* TG_Image_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0467B16920F8A89900A2696C /* TG_Image_Cell.xib */; };
+		04695AC9211943AA00A4F324 /* TG_Booking_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04695AC8211943AA00A4F324 /* TG_Booking_Cell.xib */; };
+		046C350521265E2500745FC5 /* TG_Menu_View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046C350421265E2500745FC5 /* TG_Menu_View.xib */; };
+		046C350721265E5600745FC5 /* TG_Menu_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C350621265E5600745FC5 /* TG_Menu_View.swift */; };
+		046C35092126B74C00745FC5 /* TG_PopUp_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046C35082126B74C00745FC5 /* TG_PopUp_View.swift */; };
+		046D3AAF21241B5A001464F0 /* TG_Filter_Selection_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046D3AAE21241B5A001464F0 /* TG_Filter_Selection_Cell.xib */; };
+		04751CE02101965F0092B115 /* TG_Register_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04751CDE2101965F0092B115 /* TG_Register_ViewController.swift */; };
+		04751CE12101965F0092B115 /* TG_Register_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04751CDF2101965F0092B115 /* TG_Register_ViewController.xib */; };
+		04751CE42101D9DD0092B115 /* TG_ChangePass_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04751CE22101D9DD0092B115 /* TG_ChangePass_ViewController.swift */; };
+		04751CE52101D9DD0092B115 /* TG_ChangePass_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04751CE32101D9DD0092B115 /* TG_ChangePass_ViewController.xib */; };
+		04788EA52127DCCA00D74C15 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04788EA42127DCCA00D74C15 /* Information.swift */; };
+		047BBF8E2106E2AA006710AA /* TG_Point_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047BBF8C2106E2AA006710AA /* TG_Point_ViewController.swift */; };
+		047BBF8F2106E2AA006710AA /* TG_Point_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047BBF8D2106E2AA006710AA /* TG_Point_ViewController.xib */; };
+		047BBF912106E447006710AA /* TG_Point_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047BBF902106E447006710AA /* TG_Point_Cell.xib */; };
+		047BBF9421070240006710AA /* TG_ChangeInfo_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047BBF9221070240006710AA /* TG_ChangeInfo_ViewController.swift */; };
+		047BBF9521070240006710AA /* TG_ChangeInfo_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047BBF9321070240006710AA /* TG_ChangeInfo_ViewController.xib */; };
+		047BBF9721072AA4006710AA /* format.plist in Resources */ = {isa = PBXBuildFile; fileRef = 047BBF9621072AA4006710AA /* format.plist */; };
+		047BBF9921072AF4006710AA /* TG_Drop_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047BBF9821072AF3006710AA /* TG_Drop_Cell.xib */; };
+		047CFACE21096699003BAF1A /* TG_UserInfo_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047CFACC21096699003BAF1A /* TG_UserInfo_ViewController.swift */; };
+		047CFACF21096699003BAF1A /* TG_UserInfo_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047CFACD21096699003BAF1A /* TG_UserInfo_ViewController.xib */; };
+		047CFAD12109765E003BAF1A /* TG_UserInfo_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047CFAD02109765E003BAF1A /* TG_UserInfo_Cell.xib */; };
+		0480D8F320FDCF1000266088 /* TG_Filter_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480D8F120FDCF1000266088 /* TG_Filter_ViewController.swift */; };
+		0480D8F420FDCF1000266088 /* TG_Filter_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0480D8F220FDCF1000266088 /* TG_Filter_ViewController.xib */; };
+		0480D8F620FDD14E00266088 /* TG_Filter_Rate_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0480D8F520FDD14E00266088 /* TG_Filter_Rate_Cell.xib */; };
+		0480D8F820FDEEC600266088 /* TG_Filter_Price_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0480D8F720FDEEC600266088 /* TG_Filter_Price_Cell.xib */; };
+		048271872100727200E0E954 /* CalendarDateRangePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048271842100727100E0E954 /* CalendarDateRangePickerCell.swift */; };
+		048271882100727200E0E954 /* CalendarDateRangePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048271852100727100E0E954 /* CalendarDateRangePickerViewController.swift */; };
+		048271892100727200E0E954 /* CalendarDateRangePickerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048271862100727200E0E954 /* CalendarDateRangePickerHeaderView.swift */; };
+		0482718B2100728A00E0E954 /* CalendarDateRangePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0482718A2100728A00E0E954 /* CalendarDateRangePickerViewController.xib */; };
+		048800F4212E505F0079DD79 /* TG_Information_Confirm_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048800F3212E505F0079DD79 /* TG_Information_Confirm_Cell.xib */; };
+		048800F7212E5BAC0079DD79 /* TG_Booked_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048800F5212E5BAC0079DD79 /* TG_Booked_ViewController.swift */; };
+		048800F8212E5BAC0079DD79 /* TG_Booked_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048800F6212E5BAC0079DD79 /* TG_Booked_ViewController.xib */; };
+		048DC28E212FE6A50078C895 /* TG_Empty_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048DC28D212FE6A50078C895 /* TG_Empty_Cell.xib */; };
+		048FE91621392CCF0022F807 /* TextFieldTint.m in Sources */ = {isa = PBXBuildFile; fileRef = 048FE91521392CCF0022F807 /* TextFieldTint.m */; };
+		04912B85212BECCC00AB8C09 /* TG_Hotel_Detail_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04912B83212BECCC00AB8C09 /* TG_Hotel_Detail_ViewController.swift */; };
+		04912B86212BECCC00AB8C09 /* TG_Hotel_Detail_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04912B84212BECCC00AB8C09 /* TG_Hotel_Detail_ViewController.xib */; };
+		0491331920F485E600757BF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0491331820F485E600757BF7 /* AppDelegate.swift */; };
+		0491331B20F485E600757BF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0491331A20F485E600757BF7 /* ViewController.swift */; };
+		0491331E20F485E600757BF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0491331C20F485E600757BF7 /* Main.storyboard */; };
+		0491332020F485E900757BF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0491331F20F485E900757BF7 /* Assets.xcassets */; };
+		0491332320F485E900757BF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0491332120F485E900757BF7 /* LaunchScreen.storyboard */; };
+		0491332B20F48CD300757BF7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0491332A20F48CD300757BF7 /* GoogleService-Info.plist */; };
+		0495160F20FEE6040018CE4F /* TG_Filter_Type_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0495160E20FEE6040018CE4F /* TG_Filter_Type_Cell.xib */; };
+		0495161120FEE73B0018CE4F /* TG_Filter_Header.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0495161020FEE73B0018CE4F /* TG_Filter_Header.xib */; };
+		0496EA692109C77F00F2CC98 /* TG_Map_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0496EA672109C77F00F2CC98 /* TG_Map_ViewController.swift */; };
+		0496EA6A2109C77F00F2CC98 /* TG_Map_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0496EA682109C77F00F2CC98 /* TG_Map_ViewController.xib */; };
+		049F3ABC2105699C007BE91E /* TG_User_Cell_N.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049F3ABB2105699C007BE91E /* TG_User_Cell_N.xib */; };
+		049F3AD62105C900007BE91E /* TG_Nav_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049F3AD52105C900007BE91E /* TG_Nav_ViewController.swift */; };
+		049F3AD92105E514007BE91E /* NSObject+TabbarExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 049F3AD82105E514007BE91E /* NSObject+TabbarExtension.m */; };
+		F7B83CC0F08C2EFA90C0008A /* Pods_TourGuide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2134AFF30CFF08A6CB1980FD /* Pods_TourGuide.framework */; };
+		FC0FCBCB214849FF007242D8 /* TG_Default_Password_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0FCBC9214849FF007242D8 /* TG_Default_Password_ViewController.swift */; };
+		FC0FCBCC214849FF007242D8 /* TG_Default_Password_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC0FCBCA214849FF007242D8 /* TG_Default_Password_ViewController.xib */; };
+		FC34268D2197C3D7003758A3 /* country.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC34268C2197C3D7003758A3 /* country.plist */; };
+		FC34268F2197C463003758A3 /* TG_Country_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC34268E2197C463003758A3 /* TG_Country_Cell.xib */; };
+		FC3E601E212C6CE300681187 /* TG_Web_Detail_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3E601C212C6CE300681187 /* TG_Web_Detail_ViewController.swift */; };
+		FC3E601F212C6CE300681187 /* TG_Web_Detail_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC3E601D212C6CE300681187 /* TG_Web_Detail_ViewController.xib */; };
+		FC3E6021212C823400681187 /* TG_Booking_Cell_1.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC3E6020212C823400681187 /* TG_Booking_Cell_1.xib */; };
+		FC572DC0212DA7E2005E51F6 /* TG_Information_Input_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC572DBE212DA7E2005E51F6 /* TG_Information_Input_ViewController.swift */; };
+		FC572DC1212DA7E2005E51F6 /* TG_Information_Input_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC572DBF212DA7E2005E51F6 /* TG_Information_Input_ViewController.xib */; };
+		FC572DC3212DB5C6005E51F6 /* TG_Information_Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC572DC2212DB5C6005E51F6 /* TG_Information_Cell.xib */; };
+		FC572DC6212DD0C2005E51F6 /* TG_Information_Confirm_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC572DC4212DD0C2005E51F6 /* TG_Information_Confirm_ViewController.swift */; };
+		FC572DC7212DD0C2005E51F6 /* TG_Information_Confirm_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC572DC5212DD0C2005E51F6 /* TG_Information_Confirm_ViewController.xib */; };
+		FC5D2F2E214768AD00CA37EF /* TG_Booking_Cell_2.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC5D2F2D214768AD00CA37EF /* TG_Booking_Cell_2.xib */; };
+		FCB19129212B17950036C4D1 /* TG_Search_Result_Cell_1.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCB19128212B17950036C4D1 /* TG_Search_Result_Cell_1.xib */; };
+		FCE372F7213A426200F79D7A /* CustomField.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE372F6213A426200F79D7A /* CustomField.m */; };
+		FCEF5A5D213EEEC000F36C58 /* TG_Search_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEF5A5B213EEEC000F36C58 /* TG_Search_ViewController.swift */; };
+		FCEF5A5E213EEEC000F36C58 /* TG_Search_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCEF5A5C213EEEC000F36C58 /* TG_Search_ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04306CDF21008AE300CF9AB8 /* TG_Login_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TG_Login_ViewController.swift; sourceTree = "<group>"; };
+		04306CE021008AE300CF9AB8 /* TG_Login_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Login_ViewController.xib; sourceTree = "<group>"; };
+		0431B1E121009C780035FEA6 /* TKDataValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKDataValidator.swift; sourceTree = "<group>"; };
+		04393E2620FC82C300A75264 /* TG_Search_Result_Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Search_Result_Cell.xib; sourceTree = "<group>"; };
+		0467B14120F85EAA00A2696C /* TG_Root_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TG_Root_ViewController.swift; sourceTree = "<group>"; };
+		0467B14420F85F6B00A2696C /* TG_Room_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TG_Room_ViewController.swift; sourceTree = "<group>"; };
+		0467B14520F85F6B00A2696C /* TG_Room_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Room_ViewController.xib; sourceTree = "<group>"; };
+		0467B14820F85F8E00A2696C /* TG_Favorite_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TG_Favorite_ViewController.swift; sourceTree = "<group>"; };
+		0467B14920F85F8E00A2696C /* TG_Favorite_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Favorite_ViewController.xib; sourceTree = "<group>"; };
+		0467B14C20F85FA600A2696C /* TG_Booking_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TG_Booking_ViewController.swift; sourceTree = "<group>"; };
+		0467B14D20F85FA600A2696C /* TG_Booking_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Booking_ViewController.xib; sourceTree = "<group>"; };
+		0467B15020F85FBE00A2696C /* TG_User_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TG_User_ViewController.swift; sourceTree = "<group>"; };
+		0467B15120F85FBE00A2696C /* TG_User_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_User_ViewController.xib; sourceTree = "<group>"; };
+		0467B15520F8621600A2696C /* TG_Search_Result_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TG_Search_Result_ViewController.swift; sourceTree = "<group>"; };
+		0467B15620F8621600A2696C /* TG_Search_Result_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Search_Result_ViewController.xib; sourceTree = "<group>"; };
+		0467B15B20F86D9300A2696C /* TourGuide-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TourGuide-Bridging-Header.h"; sourceTree = "<group>"; };
+		0467B15F20F87C7F00A2696C /* TG_Room_Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TG_Room_Cell.swift; sourceTree = "<group>"; };
+		0467B16020F87C7F00A2696C /* TG_Room_Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Room_Cell.xib; sourceTree = "<group>"; };
+		0467B16320F88A8000A2696C /* Marcro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Marcro.swift; sourceTree = "<group>"; };
+		0467B16520F8A5D100A2696C /* TG_Room_Cell_N.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TG_Room_Cell_N.swift; sourceTree = "<group>"; };
+		0467B16620F8A5D100A2696C /* TG_Room_Cell_N.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Room_Cell_N.xib; sourceTree = "<group>"; };
+		0467B16920F8A89900A2696C /* TG_Image_Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Image_Cell.xib; sourceTree = "<group>"; };
+		04695AC8211943AA00A4F324 /* TG_Booking_Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Booking_Cell.xib; sourceTree = "<group>"; };
+		046C350421265E2500745FC5 /* TG_Menu_View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Menu_View.xib; sourceTree = "<group>"; };
+		046C350621265E5600745FC5 /* TG_Menu_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TG_Menu_View.swift; sourceTree = "<group>"; };
+		046C35082126B74C00745FC5 /* TG_PopUp_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TG_PopUp_View.swift; sourceTree = "<group>"; };
+		046D3AAE21241B5A001464F0 /* TG_Filter_Selection_Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Filter_Selection_Cell.xib; sourceTree = "<group>"; };
+		04751CDE2101965F0092B115 /* TG_Register_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TG_Register_ViewController.swift; sourceTree = "<group>"; };
+		04751CDF2101965F0092B115 /* TG_Register_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Register_ViewController.xib; sourceTree = "<group>"; };
+		04751CE22101D9DD0092B115 /* TG_ChangePass_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TG_ChangePass_ViewController.swift; sourceTree = "<group>"; };
+		04751CE32101D9DD0092B115 /* TG_ChangePass_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_ChangePass_ViewController.xib; sourceTree = "<group>"; };
+		04788EA42127DCCA00D74C15 /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
+		047BBF8C2106E2AA006710AA /* TG_Point_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TG_Point_ViewController.swift; sourceTree = "<group>"; };
+		047BBF8D2106E2AA006710AA /* TG_Point_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Point_ViewController.xib; sourceTree = "<group>"; };
+		047BBF902106E447006710AA /* TG_Point_Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Point_Cell.xib; sourceTree = "<group>"; };
+		047BBF9221070240006710AA /* TG_ChangeInfo_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TG_ChangeInfo_ViewController.swift; sourceTree = "<group>"; };
+		047BBF9321070240006710AA /* TG_ChangeInfo_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_ChangeInfo_ViewController.xib; sourceTree = "<group>"; };
+		047BBF9621072AA4006710AA /* format.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = format.plist; sourceTree = "<group>"; };
+		047BBF9821072AF3006710AA /* TG_Drop_Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TG_Drop_Cell.xib; sourceTree = "<group>"; };
+		047CFACC21096699003BAF1A /* TG_UserInfo_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TG_UserInfo_ViewController.swift; sourceTree = "<group>"; };
+		047CFACD21096699003BAF1A /* TG_UserInfo_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_UserInfo_ViewController.xib; sourceTree = "<group>"; };
+		047CFAD02109765E003BAF1A /* TG_UserInfo_Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_UserInfo_Cell.xib; sourceTree = "<group>"; };
+		0480D8F120FDCF1000266088 /* TG_Filter_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TG_Filter_ViewController.swift; sourceTree = "<group>"; };
+		0480D8F220FDCF1000266088 /* TG_Filter_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Filter_ViewController.xib; sourceTree = "<group>"; };
+		0480D8F520FDD14E00266088 /* TG_Filter_Rate_Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Filter_Rate_Cell.xib; sourceTree = "<group>"; };
+		0480D8F720FDEEC600266088 /* TG_Filter_Price_Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Filter_Price_Cell.xib; sourceTree = "<group>"; };
+		048271842100727100E0E954 /* CalendarDateRangePickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDateRangePickerCell.swift; sourceTree = "<group>"; };
+		048271852100727100E0E954 /* CalendarDateRangePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDateRangePickerViewController.swift; sourceTree = "<group>"; };
+		048271862100727200E0E954 /* CalendarDateRangePickerHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDateRangePickerHeaderView.swift; sourceTree = "<group>"; };
+		0482718A2100728A00E0E954 /* CalendarDateRangePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarDateRangePickerViewController.xib; sourceTree = "<group>"; };
+		048800F3212E505F0079DD79 /* TG_Information_Confirm_Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Information_Confirm_Cell.xib; sourceTree = "<group>"; };
+		048800F5212E5BAC0079DD79 /* TG_Booked_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TG_Booked_ViewController.swift; sourceTree = "<group>"; };
+		048800F6212E5BAC0079DD79 /* TG_Booked_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Booked_ViewController.xib; sourceTree = "<group>"; };
+		048DC28D212FE6A50078C895 /* TG_Empty_Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Empty_Cell.xib; sourceTree = "<group>"; };
+		048FE91421392CCF0022F807 /* TextFieldTint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldTint.h; sourceTree = "<group>"; };
+		048FE91521392CCF0022F807 /* TextFieldTint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldTint.m; sourceTree = "<group>"; };
+		04912B83212BECCC00AB8C09 /* TG_Hotel_Detail_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TG_Hotel_Detail_ViewController.swift; sourceTree = "<group>"; };
+		04912B84212BECCC00AB8C09 /* TG_Hotel_Detail_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Hotel_Detail_ViewController.xib; sourceTree = "<group>"; };
+		0491331520F485E600757BF7 /* TourGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0491331820F485E600757BF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0491331A20F485E600757BF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0491331D20F485E600757BF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0491331F20F485E900757BF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0491332220F485E900757BF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0491332420F485E900757BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0491332A20F48CD300757BF7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0491332C20F4A7BD00757BF7 /* TourGuide.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TourGuide.entitlements; sourceTree = "<group>"; };
+		0495160E20FEE6040018CE4F /* TG_Filter_Type_Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Filter_Type_Cell.xib; sourceTree = "<group>"; };
+		0495161020FEE73B0018CE4F /* TG_Filter_Header.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Filter_Header.xib; sourceTree = "<group>"; };
+		0496EA672109C77F00F2CC98 /* TG_Map_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TG_Map_ViewController.swift; sourceTree = "<group>"; };
+		0496EA682109C77F00F2CC98 /* TG_Map_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Map_ViewController.xib; sourceTree = "<group>"; };
+		049F3ABB2105699C007BE91E /* TG_User_Cell_N.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_User_Cell_N.xib; sourceTree = "<group>"; };
+		049F3AD52105C900007BE91E /* TG_Nav_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TG_Nav_ViewController.swift; sourceTree = "<group>"; };
+		049F3AD72105E514007BE91E /* NSObject+TabbarExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+TabbarExtension.h"; sourceTree = "<group>"; };
+		049F3AD82105E514007BE91E /* NSObject+TabbarExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TabbarExtension.m"; sourceTree = "<group>"; };
+		2134AFF30CFF08A6CB1980FD /* Pods_TourGuide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TourGuide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91D21159E1A9C971487FA41D /* Pods-TourGuide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TourGuide.release.xcconfig"; path = "Pods/Target Support Files/Pods-TourGuide/Pods-TourGuide.release.xcconfig"; sourceTree = "<group>"; };
+		F36E258AF3431C0E496426B0 /* Pods-TourGuide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TourGuide.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TourGuide/Pods-TourGuide.debug.xcconfig"; sourceTree = "<group>"; };
+		FC0FCBC9214849FF007242D8 /* TG_Default_Password_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TG_Default_Password_ViewController.swift; sourceTree = "<group>"; };
+		FC0FCBCA214849FF007242D8 /* TG_Default_Password_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Default_Password_ViewController.xib; sourceTree = "<group>"; };
+		FC34268C2197C3D7003758A3 /* country.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = country.plist; sourceTree = "<group>"; };
+		FC34268E2197C463003758A3 /* TG_Country_Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Country_Cell.xib; sourceTree = "<group>"; };
+		FC3E601C212C6CE300681187 /* TG_Web_Detail_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TG_Web_Detail_ViewController.swift; sourceTree = "<group>"; };
+		FC3E601D212C6CE300681187 /* TG_Web_Detail_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Web_Detail_ViewController.xib; sourceTree = "<group>"; };
+		FC3E6020212C823400681187 /* TG_Booking_Cell_1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Booking_Cell_1.xib; sourceTree = "<group>"; };
+		FC572DBE212DA7E2005E51F6 /* TG_Information_Input_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TG_Information_Input_ViewController.swift; sourceTree = "<group>"; };
+		FC572DBF212DA7E2005E51F6 /* TG_Information_Input_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Information_Input_ViewController.xib; sourceTree = "<group>"; };
+		FC572DC2212DB5C6005E51F6 /* TG_Information_Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Information_Cell.xib; sourceTree = "<group>"; };
+		FC572DC4212DD0C2005E51F6 /* TG_Information_Confirm_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TG_Information_Confirm_ViewController.swift; sourceTree = "<group>"; };
+		FC572DC5212DD0C2005E51F6 /* TG_Information_Confirm_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Information_Confirm_ViewController.xib; sourceTree = "<group>"; };
+		FC5D2F2D214768AD00CA37EF /* TG_Booking_Cell_2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Booking_Cell_2.xib; sourceTree = "<group>"; };
+		FCB19128212B17950036C4D1 /* TG_Search_Result_Cell_1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Search_Result_Cell_1.xib; sourceTree = "<group>"; };
+		FCE372F5213A426100F79D7A /* CustomField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomField.h; sourceTree = "<group>"; };
+		FCE372F6213A426200F79D7A /* CustomField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomField.m; sourceTree = "<group>"; };
+		FCEF5A5B213EEEC000F36C58 /* TG_Search_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TG_Search_ViewController.swift; sourceTree = "<group>"; };
+		FCEF5A5C213EEEC000F36C58 /* TG_Search_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Search_ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0491331220F485E600757BF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7B83CC0F08C2EFA90C0008A /* Pods_TourGuide.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04306CDE21008ABC00CF9AB8 /* Log_Reg_Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				04306CDF21008AE300CF9AB8 /* TG_Login_ViewController.swift */,
+				04306CE021008AE300CF9AB8 /* TG_Login_ViewController.xib */,
+				04751CDE2101965F0092B115 /* TG_Register_ViewController.swift */,
+				04751CDF2101965F0092B115 /* TG_Register_ViewController.xib */,
+				04751CE22101D9DD0092B115 /* TG_ChangePass_ViewController.swift */,
+				04751CE32101D9DD0092B115 /* TG_ChangePass_ViewController.xib */,
+				FC0FCBC9214849FF007242D8 /* TG_Default_Password_ViewController.swift */,
+				FC0FCBCA214849FF007242D8 /* TG_Default_Password_ViewController.xib */,
+			);
+			path = Log_Reg_Controllers;
+			sourceTree = "<group>";
+		};
+		0467B14020F85E4100A2696C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0467B14120F85EAA00A2696C /* TG_Root_ViewController.swift */,
+				049F3AD52105C900007BE91E /* TG_Nav_ViewController.swift */,
+				048DC28D212FE6A50078C895 /* TG_Empty_Cell.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0467B14320F85F1D00A2696C /* Tab_ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0467B14420F85F6B00A2696C /* TG_Room_ViewController.swift */,
+				0467B14520F85F6B00A2696C /* TG_Room_ViewController.xib */,
+				0467B15F20F87C7F00A2696C /* TG_Room_Cell.swift */,
+				0467B16020F87C7F00A2696C /* TG_Room_Cell.xib */,
+				0467B16520F8A5D100A2696C /* TG_Room_Cell_N.swift */,
+				0467B16620F8A5D100A2696C /* TG_Room_Cell_N.xib */,
+				0467B16920F8A89900A2696C /* TG_Image_Cell.xib */,
+				0467B14820F85F8E00A2696C /* TG_Favorite_ViewController.swift */,
+				0467B14920F85F8E00A2696C /* TG_Favorite_ViewController.xib */,
+				0467B14C20F85FA600A2696C /* TG_Booking_ViewController.swift */,
+				0467B14D20F85FA600A2696C /* TG_Booking_ViewController.xib */,
+				04695AC8211943AA00A4F324 /* TG_Booking_Cell.xib */,
+				FC3E6020212C823400681187 /* TG_Booking_Cell_1.xib */,
+				FC5D2F2D214768AD00CA37EF /* TG_Booking_Cell_2.xib */,
+				0467B15020F85FBE00A2696C /* TG_User_ViewController.swift */,
+				0467B15120F85FBE00A2696C /* TG_User_ViewController.xib */,
+				049F3ABB2105699C007BE91E /* TG_User_Cell_N.xib */,
+				046C350621265E5600745FC5 /* TG_Menu_View.swift */,
+				046C350421265E2500745FC5 /* TG_Menu_View.xib */,
+				046C35082126B74C00745FC5 /* TG_PopUp_View.swift */,
+			);
+			path = Tab_ViewControllers;
+			sourceTree = "<group>";
+		};
+		0467B15420F861C100A2696C /* Detail_Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0467B15520F8621600A2696C /* TG_Search_Result_ViewController.swift */,
+				0467B15620F8621600A2696C /* TG_Search_Result_ViewController.xib */,
+				04393E2620FC82C300A75264 /* TG_Search_Result_Cell.xib */,
+				FCB19128212B17950036C4D1 /* TG_Search_Result_Cell_1.xib */,
+				0480D8F120FDCF1000266088 /* TG_Filter_ViewController.swift */,
+				0480D8F220FDCF1000266088 /* TG_Filter_ViewController.xib */,
+				0495161020FEE73B0018CE4F /* TG_Filter_Header.xib */,
+				0480D8F520FDD14E00266088 /* TG_Filter_Rate_Cell.xib */,
+				0480D8F720FDEEC600266088 /* TG_Filter_Price_Cell.xib */,
+				0495160E20FEE6040018CE4F /* TG_Filter_Type_Cell.xib */,
+				046D3AAE21241B5A001464F0 /* TG_Filter_Selection_Cell.xib */,
+				FCEF5A5B213EEEC000F36C58 /* TG_Search_ViewController.swift */,
+				FCEF5A5C213EEEC000F36C58 /* TG_Search_ViewController.xib */,
+			);
+			path = Detail_Controllers;
+			sourceTree = "<group>";
+		};
+		04695AC721193C6200A4F324 /* Personal */ = {
+			isa = PBXGroup;
+			children = (
+				FCE372F5213A426100F79D7A /* CustomField.h */,
+				FCE372F6213A426200F79D7A /* CustomField.m */,
+				04788EA42127DCCA00D74C15 /* Information.swift */,
+				048FE91421392CCF0022F807 /* TextFieldTint.h */,
+				048FE91521392CCF0022F807 /* TextFieldTint.m */,
+			);
+			path = Personal;
+			sourceTree = "<group>";
+		};
+		047BBF8B2106E231006710AA /* Info_Vpoint */ = {
+			isa = PBXGroup;
+			children = (
+				047BBF8C2106E2AA006710AA /* TG_Point_ViewController.swift */,
+				047BBF8D2106E2AA006710AA /* TG_Point_ViewController.xib */,
+				047BBF902106E447006710AA /* TG_Point_Cell.xib */,
+				047BBF9221070240006710AA /* TG_ChangeInfo_ViewController.swift */,
+				047BBF9321070240006710AA /* TG_ChangeInfo_ViewController.xib */,
+				047BBF9621072AA4006710AA /* format.plist */,
+				FC34268C2197C3D7003758A3 /* country.plist */,
+				047BBF9821072AF3006710AA /* TG_Drop_Cell.xib */,
+				FC34268E2197C463003758A3 /* TG_Country_Cell.xib */,
+				047CFACC21096699003BAF1A /* TG_UserInfo_ViewController.swift */,
+				047CFACD21096699003BAF1A /* TG_UserInfo_ViewController.xib */,
+				047CFAD02109765E003BAF1A /* TG_UserInfo_Cell.xib */,
+			);
+			path = Info_Vpoint;
+			sourceTree = "<group>";
+		};
+		0482717B2100708E00E0E954 /* Calendar_Controller */ = {
+			isa = PBXGroup;
+			children = (
+				048271842100727100E0E954 /* CalendarDateRangePickerCell.swift */,
+				048271862100727200E0E954 /* CalendarDateRangePickerHeaderView.swift */,
+				048271852100727100E0E954 /* CalendarDateRangePickerViewController.swift */,
+				0482718A2100728A00E0E954 /* CalendarDateRangePickerViewController.xib */,
+			);
+			path = Calendar_Controller;
+			sourceTree = "<group>";
+		};
+		04912B82212BEC9100AB8C09 /* Hotel_Detail */ = {
+			isa = PBXGroup;
+			children = (
+				04912B83212BECCC00AB8C09 /* TG_Hotel_Detail_ViewController.swift */,
+				04912B84212BECCC00AB8C09 /* TG_Hotel_Detail_ViewController.xib */,
+				FC572DBE212DA7E2005E51F6 /* TG_Information_Input_ViewController.swift */,
+				FC572DBF212DA7E2005E51F6 /* TG_Information_Input_ViewController.xib */,
+				FC572DC2212DB5C6005E51F6 /* TG_Information_Cell.xib */,
+				FC572DC4212DD0C2005E51F6 /* TG_Information_Confirm_ViewController.swift */,
+				FC572DC5212DD0C2005E51F6 /* TG_Information_Confirm_ViewController.xib */,
+				048800F3212E505F0079DD79 /* TG_Information_Confirm_Cell.xib */,
+				048800F5212E5BAC0079DD79 /* TG_Booked_ViewController.swift */,
+				048800F6212E5BAC0079DD79 /* TG_Booked_ViewController.xib */,
+				FC3E601C212C6CE300681187 /* TG_Web_Detail_ViewController.swift */,
+				FC3E601D212C6CE300681187 /* TG_Web_Detail_ViewController.xib */,
+			);
+			path = Hotel_Detail;
+			sourceTree = "<group>";
+		};
+		0491330C20F485E600757BF7 = {
+			isa = PBXGroup;
+			children = (
+				0491331720F485E600757BF7 /* TourGuide */,
+				0491331620F485E600757BF7 /* Products */,
+				743D855352ECD1A757AA9F93 /* Pods */,
+				C5D2D2975DEC38B7F08129FF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0491331620F485E600757BF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0491331520F485E600757BF7 /* TourGuide.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0491331720F485E600757BF7 /* TourGuide */ = {
+			isa = PBXGroup;
+			children = (
+				04912B82212BEC9100AB8C09 /* Hotel_Detail */,
+				04695AC721193C6200A4F324 /* Personal */,
+				0496EA662109C75D00F2CC98 /* Map_Controller */,
+				047BBF8B2106E231006710AA /* Info_Vpoint */,
+				04306CDE21008ABC00CF9AB8 /* Log_Reg_Controllers */,
+				0482717B2100708E00E0E954 /* Calendar_Controller */,
+				0467B15420F861C100A2696C /* Detail_Controllers */,
+				0467B14320F85F1D00A2696C /* Tab_ViewControllers */,
+				0467B14020F85E4100A2696C /* ViewControllers */,
+				0491332C20F4A7BD00757BF7 /* TourGuide.entitlements */,
+				0491332A20F48CD300757BF7 /* GoogleService-Info.plist */,
+				049F3AD72105E514007BE91E /* NSObject+TabbarExtension.h */,
+				049F3AD82105E514007BE91E /* NSObject+TabbarExtension.m */,
+				0491331820F485E600757BF7 /* AppDelegate.swift */,
+				0491331A20F485E600757BF7 /* ViewController.swift */,
+				0431B1E121009C780035FEA6 /* TKDataValidator.swift */,
+				0467B16320F88A8000A2696C /* Marcro.swift */,
+				0491331C20F485E600757BF7 /* Main.storyboard */,
+				0467B15B20F86D9300A2696C /* TourGuide-Bridging-Header.h */,
+				0491331F20F485E900757BF7 /* Assets.xcassets */,
+				0491332120F485E900757BF7 /* LaunchScreen.storyboard */,
+				0491332420F485E900757BF7 /* Info.plist */,
+			);
+			path = TourGuide;
+			sourceTree = "<group>";
+		};
+		0496EA662109C75D00F2CC98 /* Map_Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0496EA672109C77F00F2CC98 /* TG_Map_ViewController.swift */,
+				0496EA682109C77F00F2CC98 /* TG_Map_ViewController.xib */,
+			);
+			path = Map_Controller;
+			sourceTree = "<group>";
+		};
+		743D855352ECD1A757AA9F93 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F36E258AF3431C0E496426B0 /* Pods-TourGuide.debug.xcconfig */,
+				91D21159E1A9C971487FA41D /* Pods-TourGuide.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C5D2D2975DEC38B7F08129FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2134AFF30CFF08A6CB1980FD /* Pods_TourGuide.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0491331420F485E600757BF7 /* TourGuide */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0491332720F485E900757BF7 /* Build configuration list for PBXNativeTarget "TourGuide" */;
+			buildPhases = (
+				D6279A5530AC668B76F5F47B /* [CP] Check Pods Manifest.lock */,
+				0491331120F485E600757BF7 /* Sources */,
+				0491331220F485E600757BF7 /* Frameworks */,
+				0491331320F485E600757BF7 /* Resources */,
+				D8D57FAE3F49C009DF97674D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TourGuide;
+			productName = TourGuide;
+			productReference = 0491331520F485E600757BF7 /* TourGuide.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0491330D20F485E600757BF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Mac;
+				TargetAttributes = {
+					0491331420F485E600757BF7 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 0491331020F485E600757BF7 /* Build configuration list for PBXProject "TourGuide" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0491330C20F485E600757BF7;
+			productRefGroup = 0491331620F485E600757BF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0491331420F485E600757BF7 /* TourGuide */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0491331320F485E600757BF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0467B14720F85F6B00A2696C /* TG_Room_ViewController.xib in Resources */,
+				0480D8F420FDCF1000266088 /* TG_Filter_ViewController.xib in Resources */,
+				04393E2720FC82C300A75264 /* TG_Search_Result_Cell.xib in Resources */,
+				047CFACF21096699003BAF1A /* TG_UserInfo_ViewController.xib in Resources */,
+				FCB19129212B17950036C4D1 /* TG_Search_Result_Cell_1.xib in Resources */,
+				0467B16820F8A5D100A2696C /* TG_Room_Cell_N.xib in Resources */,
+				048DC28E212FE6A50078C895 /* TG_Empty_Cell.xib in Resources */,
+				FC572DC7212DD0C2005E51F6 /* TG_Information_Confirm_ViewController.xib in Resources */,
+				0491332320F485E900757BF7 /* LaunchScreen.storyboard in Resources */,
+				04695AC9211943AA00A4F324 /* TG_Booking_Cell.xib in Resources */,
+				0495160F20FEE6040018CE4F /* TG_Filter_Type_Cell.xib in Resources */,
+				047BBF8F2106E2AA006710AA /* TG_Point_ViewController.xib in Resources */,
+				047BBF9521070240006710AA /* TG_ChangeInfo_ViewController.xib in Resources */,
+				047CFAD12109765E003BAF1A /* TG_UserInfo_Cell.xib in Resources */,
+				0467B15320F85FBE00A2696C /* TG_User_ViewController.xib in Resources */,
+				FC0FCBCC214849FF007242D8 /* TG_Default_Password_ViewController.xib in Resources */,
+				0491332B20F48CD300757BF7 /* GoogleService-Info.plist in Resources */,
+				FC3E6021212C823400681187 /* TG_Booking_Cell_1.xib in Resources */,
+				FC5D2F2E214768AD00CA37EF /* TG_Booking_Cell_2.xib in Resources */,
+				048800F4212E505F0079DD79 /* TG_Information_Confirm_Cell.xib in Resources */,
+				0467B14B20F85F8E00A2696C /* TG_Favorite_ViewController.xib in Resources */,
+				04306CE221008AE300CF9AB8 /* TG_Login_ViewController.xib in Resources */,
+				0482718B2100728A00E0E954 /* CalendarDateRangePickerViewController.xib in Resources */,
+				FCEF5A5E213EEEC000F36C58 /* TG_Search_ViewController.xib in Resources */,
+				04912B86212BECCC00AB8C09 /* TG_Hotel_Detail_ViewController.xib in Resources */,
+				FC3E601F212C6CE300681187 /* TG_Web_Detail_ViewController.xib in Resources */,
+				0491332020F485E900757BF7 /* Assets.xcassets in Resources */,
+				FC34268D2197C3D7003758A3 /* country.plist in Resources */,
+				FC572DC1212DA7E2005E51F6 /* TG_Information_Input_ViewController.xib in Resources */,
+				FC34268F2197C463003758A3 /* TG_Country_Cell.xib in Resources */,
+				046D3AAF21241B5A001464F0 /* TG_Filter_Selection_Cell.xib in Resources */,
+				0467B15820F8621600A2696C /* TG_Search_Result_ViewController.xib in Resources */,
+				0480D8F820FDEEC600266088 /* TG_Filter_Price_Cell.xib in Resources */,
+				04751CE52101D9DD0092B115 /* TG_ChangePass_ViewController.xib in Resources */,
+				047BBF9921072AF4006710AA /* TG_Drop_Cell.xib in Resources */,
+				046C350521265E2500745FC5 /* TG_Menu_View.xib in Resources */,
+				0491331E20F485E600757BF7 /* Main.storyboard in Resources */,
+				04751CE12101965F0092B115 /* TG_Register_ViewController.xib in Resources */,
+				047BBF9721072AA4006710AA /* format.plist in Resources */,
+				049F3ABC2105699C007BE91E /* TG_User_Cell_N.xib in Resources */,
+				0467B14F20F85FA600A2696C /* TG_Booking_ViewController.xib in Resources */,
+				0496EA6A2109C77F00F2CC98 /* TG_Map_ViewController.xib in Resources */,
+				047BBF912106E447006710AA /* TG_Point_Cell.xib in Resources */,
+				0467B16A20F8A89900A2696C /* TG_Image_Cell.xib in Resources */,
+				0467B16220F87C7F00A2696C /* TG_Room_Cell.xib in Resources */,
+				0480D8F620FDD14E00266088 /* TG_Filter_Rate_Cell.xib in Resources */,
+				048800F8212E5BAC0079DD79 /* TG_Booked_ViewController.xib in Resources */,
+				0495161120FEE73B0018CE4F /* TG_Filter_Header.xib in Resources */,
+				FC572DC3212DB5C6005E51F6 /* TG_Information_Cell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D6279A5530AC668B76F5F47B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TourGuide-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8D57FAE3F49C009DF97674D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TourGuide/Pods-TourGuide-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/AVHexColor/AVHexColor.framework",
+				"${BUILT_PRODUCTS_DIR}/AllPod/AllPod.framework",
+				"${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
+				"${BUILT_PRODUCTS_DIR}/JSONKit-NoWarning/JSONKit_NoWarning.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
+				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/RangeSeekSlider/RangeSeekSlider.framework",
+				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyStarRatingView/SwiftyStarRatingView.framework",
+				"${BUILT_PRODUCTS_DIR}/TKFormTextField/TKFormTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast/Toast.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AVHexColor.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AllPod.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONKit_NoWarning.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RangeSeekSlider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyStarRatingView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TKFormTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TourGuide/Pods-TourGuide-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0491331120F485E600757BF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0467B14620F85F6B00A2696C /* TG_Room_ViewController.swift in Sources */,
+				0467B16120F87C7F00A2696C /* TG_Room_Cell.swift in Sources */,
+				048800F7212E5BAC0079DD79 /* TG_Booked_ViewController.swift in Sources */,
+				047BBF9421070240006710AA /* TG_ChangeInfo_ViewController.swift in Sources */,
+				0467B16720F8A5D100A2696C /* TG_Room_Cell_N.swift in Sources */,
+				0467B14E20F85FA600A2696C /* TG_Booking_ViewController.swift in Sources */,
+				046C35092126B74C00745FC5 /* TG_PopUp_View.swift in Sources */,
+				049F3AD92105E514007BE91E /* NSObject+TabbarExtension.m in Sources */,
+				046C350721265E5600745FC5 /* TG_Menu_View.swift in Sources */,
+				0467B14A20F85F8E00A2696C /* TG_Favorite_ViewController.swift in Sources */,
+				048271892100727200E0E954 /* CalendarDateRangePickerHeaderView.swift in Sources */,
+				0491331B20F485E600757BF7 /* ViewController.swift in Sources */,
+				04751CE42101D9DD0092B115 /* TG_ChangePass_ViewController.swift in Sources */,
+				0467B15720F8621600A2696C /* TG_Search_Result_ViewController.swift in Sources */,
+				047BBF8E2106E2AA006710AA /* TG_Point_ViewController.swift in Sources */,
+				0496EA692109C77F00F2CC98 /* TG_Map_ViewController.swift in Sources */,
+				0480D8F320FDCF1000266088 /* TG_Filter_ViewController.swift in Sources */,
+				FC0FCBCB214849FF007242D8 /* TG_Default_Password_ViewController.swift in Sources */,
+				04306CE121008AE300CF9AB8 /* TG_Login_ViewController.swift in Sources */,
+				FC572DC6212DD0C2005E51F6 /* TG_Information_Confirm_ViewController.swift in Sources */,
+				0431B1E221009C790035FEA6 /* TKDataValidator.swift in Sources */,
+				048271882100727200E0E954 /* CalendarDateRangePickerViewController.swift in Sources */,
+				0467B15220F85FBE00A2696C /* TG_User_ViewController.swift in Sources */,
+				0467B14220F85EAA00A2696C /* TG_Root_ViewController.swift in Sources */,
+				048FE91621392CCF0022F807 /* TextFieldTint.m in Sources */,
+				FC3E601E212C6CE300681187 /* TG_Web_Detail_ViewController.swift in Sources */,
+				FCE372F7213A426200F79D7A /* CustomField.m in Sources */,
+				0491331920F485E600757BF7 /* AppDelegate.swift in Sources */,
+				04788EA52127DCCA00D74C15 /* Information.swift in Sources */,
+				04912B85212BECCC00AB8C09 /* TG_Hotel_Detail_ViewController.swift in Sources */,
+				0467B16420F88A8000A2696C /* Marcro.swift in Sources */,
+				FC572DC0212DA7E2005E51F6 /* TG_Information_Input_ViewController.swift in Sources */,
+				047CFACE21096699003BAF1A /* TG_UserInfo_ViewController.swift in Sources */,
+				04751CE02101965F0092B115 /* TG_Register_ViewController.swift in Sources */,
+				048271872100727200E0E954 /* CalendarDateRangePickerCell.swift in Sources */,
+				049F3AD62105C900007BE91E /* TG_Nav_ViewController.swift in Sources */,
+				FCEF5A5D213EEEC000F36C58 /* TG_Search_ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0491331C20F485E600757BF7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0491331D20F485E600757BF7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0491332120F485E900757BF7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0491332220F485E900757BF7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0491332520F485E900757BF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0491332620F485E900757BF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0491332820F485E900757BF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F36E258AF3431C0E496426B0 /* Pods-TourGuide.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Huy Nguyen (S6X8K9KLV3)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 3L2APQ2D3U;
+				INFOPLIST_FILE = TourGuide/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vn.crystalhoildays;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4a3ab824-7280-47fb-8041-ce1df749ae95";
+				PROVISIONING_PROFILE_SPECIFIER = crystal_dev;
+				SWIFT_OBJC_BRIDGING_HEADER = "TourGuide/TourGuide-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		0491332920F485E900757BF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91D21159E1A9C971487FA41D /* Pods-TourGuide.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: 3D ART DESIGN CONSULTANCY AND TECHNOLOGY SOLUTION JOINT STOCK COMPANY (3L2APQ2D3U)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 3L2APQ2D3U;
+				INFOPLIST_FILE = TourGuide/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vn.crystalhoildays;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "93445751-eb7f-42f5-ac10-a82bbbd829ee";
+				PROVISIONING_PROFILE_SPECIFIER = Cystal_Dis;
+				SWIFT_OBJC_BRIDGING_HEADER = "TourGuide/TourGuide-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0491331020F485E600757BF7 /* Build configuration list for PBXProject "TourGuide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0491332520F485E900757BF7 /* Debug */,
+				0491332620F485E900757BF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0491332720F485E900757BF7 /* Build configuration list for PBXNativeTarget "TourGuide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0491332820F485E900757BF7 /* Debug */,
+				0491332920F485E900757BF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0491330D20F485E600757BF7 /* Project object */;
+}

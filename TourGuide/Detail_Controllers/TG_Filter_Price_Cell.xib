@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TG_Filter_Price_Cell" rowHeight="77" id="7IC-aY-A14">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7IC-aY-A14" id="g5o-0y-f7e">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TGy-Ke-4qQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                        <subviews>
+                            <view tag="11" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zlm-HI-yHS" customClass="RangeSeekSlider" customModule="RangeSeekSlider">
+                                <rect key="frame" x="8" y="23" width="304" height="39"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="DCq-Vg-Hkd"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minValue">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hideLabels" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="labelsFixed" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="handleColor">
+                                        <color key="value" red="0.90980392160000001" green="0.49019607840000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="handleBorderColor">
+                                        <color key="value" red="0.90980392160000001" green="0.49019607840000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="colorBetweenHandles">
+                                        <color key="value" red="0.90980392160000001" green="0.49019607840000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                        <real key="value" value="1000"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="initialColor">
+                                        <color key="value" red="0.90980392160000001" green="0.49019607840000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="minLabelColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="maxLabelColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="step">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="disableRange" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enableStep" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Khuyến mại đặc biệt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ae9-Br-Q7x">
+                                <rect key="frame" x="11" y="70" width="252" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="480-bn-MYE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6d-oF-8Nd">
+                                <rect key="frame" x="266" y="71" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="5pp-dL-kQK"/>
+                                    <constraint firstAttribute="height" constant="44" id="86T-vP-AYS"/>
+                                </constraints>
+                                <state key="normal" image="check_ac"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="12s-yu-jtC"/>
+                            <constraint firstItem="zlm-HI-yHS" firstAttribute="leading" secondItem="4cO-nH-bb5" secondAttribute="leading" constant="8" id="BAm-Dz-o4B"/>
+                            <constraint firstItem="4cO-nH-bb5" firstAttribute="trailing" secondItem="f6d-oF-8Nd" secondAttribute="trailing" constant="10" id="EJe-8M-kNn"/>
+                            <constraint firstItem="f6d-oF-8Nd" firstAttribute="leading" secondItem="ae9-Br-Q7x" secondAttribute="trailing" constant="3" id="Tws-34-RAA"/>
+                            <constraint firstItem="f6d-oF-8Nd" firstAttribute="top" secondItem="zlm-HI-yHS" secondAttribute="bottom" constant="9" id="Wg2-re-1o3"/>
+                            <constraint firstItem="zlm-HI-yHS" firstAttribute="top" secondItem="4cO-nH-bb5" secondAttribute="top" constant="23" id="hNd-4b-5e7"/>
+                            <constraint firstItem="ae9-Br-Q7x" firstAttribute="leading" secondItem="4cO-nH-bb5" secondAttribute="leading" constant="11" id="kTv-qd-uLU"/>
+                            <constraint firstItem="4cO-nH-bb5" firstAttribute="trailing" secondItem="zlm-HI-yHS" secondAttribute="trailing" constant="8" id="mmv-Xe-4KX"/>
+                            <constraint firstItem="ae9-Br-Q7x" firstAttribute="top" secondItem="zlm-HI-yHS" secondAttribute="bottom" constant="8" id="tgI-ah-VoW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4cO-nH-bb5"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="TGy-Ke-4qQ" secondAttribute="trailing" id="1xa-Aj-9cj"/>
+                    <constraint firstAttribute="bottom" secondItem="TGy-Ke-4qQ" secondAttribute="bottom" id="ZlS-oy-eDt"/>
+                    <constraint firstItem="TGy-Ke-4qQ" firstAttribute="top" secondItem="g5o-0y-f7e" secondAttribute="top" id="ke0-EA-PyN"/>
+                    <constraint firstItem="TGy-Ke-4qQ" firstAttribute="leading" secondItem="g5o-0y-f7e" secondAttribute="leading" id="szF-es-mI3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="-161" y="-3"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="check_ac" width="50" height="50"/>
+    </resources>
+</document>

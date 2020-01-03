@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CalendarDateRangePickerViewController" customModule="TourGuide" customModuleProvider="target">
+            <connections>
+                <outlet property="accept" destination="dE5-mR-Zxk" id="ycz-A7-o2l"/>
+                <outlet property="bottomLabel" destination="J3J-Ug-RCg" id="dsz-nk-aE0"/>
+                <outlet property="collectionView" destination="nRj-ua-3Gr" id="1XR-ae-2hd"/>
+                <outlet property="topBar" destination="3PO-B7-97z" id="aJq-4g-iRm"/>
+                <outlet property="topLabel" destination="Vku-Jn-A2W" id="zLV-vD-IJZ"/>
+                <outlet property="view" destination="iN0-l3-epB" id="aDn-EY-qMQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="nRj-ua-3Gr">
+                    <rect key="frame" x="0.0" y="84" width="320" height="396"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qhJ-29-YXn">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="lnj-ct-bb5"/>
+                        <outlet property="delegate" destination="-1" id="8Tb-BN-Gl9"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qNw-o5-djg">
+                    <rect key="frame" x="0.0" y="20" width="320" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tQ-c1-Ocr">
+                            <rect key="frame" x="0.0" y="20" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="eV6-so-6rm"/>
+                                <constraint firstAttribute="height" constant="44" id="sJt-8R-sdq"/>
+                            </constraints>
+                            <state key="normal" image="x"/>
+                            <connections>
+                                <action selector="didTapCancel" destination="-1" eventType="touchUpInside" id="AoT-oq-t3G"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crystal Holidays" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Vku-Jn-A2W">
+                            <rect key="frame" x="38" y="32" width="243" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="wOK-mp-uVo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90980392160000001" green="0.49019607840000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="3PO-B7-97z"/>
+                        <constraint firstAttribute="trailing" secondItem="Vku-Jn-A2W" secondAttribute="trailing" constant="39" id="5OY-Ks-hHQ"/>
+                        <constraint firstItem="2tQ-c1-Ocr" firstAttribute="leading" secondItem="qNw-o5-djg" secondAttribute="leading" id="kW0-hO-00r"/>
+                        <constraint firstAttribute="bottom" secondItem="2tQ-c1-Ocr" secondAttribute="bottom" id="pdo-Hq-50l"/>
+                        <constraint firstItem="Vku-Jn-A2W" firstAttribute="leading" secondItem="qNw-o5-djg" secondAttribute="leading" constant="38" id="t4h-g3-moF"/>
+                        <constraint firstAttribute="bottom" secondItem="Vku-Jn-A2W" secondAttribute="bottom" constant="11" id="yQA-RP-7uC"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="flex" value=""/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EV0-bL-Zan">
+                    <rect key="frame" x="0.0" y="430" width="320" height="50"/>
+                    <subviews>
+                        <button opaque="NO" clipsSubviews="YES" alpha="0.5" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dE5-mR-Zxk">
+                            <rect key="frame" x="232" y="6" width="80" height="38"/>
+                            <color key="backgroundColor" red="0.90980392160000001" green="0.49019607840000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="38" id="WFQ-46-iUb"/>
+                                <constraint firstAttribute="width" constant="80" id="rz8-eP-qJO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                            <state key="normal" title="Xác nhận">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="didTapDone" destination="-1" eventType="touchUpInside" id="C4E-Kz-gvv"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chọn ngày khởi hành" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3J-Ug-RCg">
+                            <rect key="frame" x="8" y="15" width="216" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="9cT-L6-9Hc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="J3J-Ug-RCg" firstAttribute="leading" secondItem="EV0-bL-Zan" secondAttribute="leading" constant="8" id="0Ty-wL-EJ5"/>
+                        <constraint firstAttribute="bottom" secondItem="dE5-mR-Zxk" secondAttribute="bottom" constant="6" id="3Y3-Rs-moK"/>
+                        <constraint firstAttribute="trailing" secondItem="dE5-mR-Zxk" secondAttribute="trailing" constant="8" id="55L-aW-9fy"/>
+                        <constraint firstAttribute="height" constant="50" id="HrM-z4-h7m"/>
+                        <constraint firstItem="dE5-mR-Zxk" firstAttribute="leading" secondItem="J3J-Ug-RCg" secondAttribute="trailing" constant="8" id="nAY-IA-4Gl"/>
+                        <constraint firstAttribute="bottom" secondItem="J3J-Ug-RCg" secondAttribute="bottom" constant="14" id="yb6-yy-y27"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nRj-ua-3Gr" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="7Zh-ik-ahv"/>
+                <constraint firstItem="nRj-ua-3Gr" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="8Kl-F7-nsf"/>
+                <constraint firstItem="qNw-o5-djg" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="KXb-xD-MAV"/>
+                <constraint firstItem="nRj-ua-3Gr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="QJX-I5-2xw"/>
+                <constraint firstItem="EV0-bL-Zan" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="ULB-wM-Cqb"/>
+                <constraint firstItem="EV0-bL-Zan" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dGG-qM-KXe"/>
+                <constraint firstItem="EV0-bL-Zan" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="gF0-fg-968"/>
+                <constraint firstItem="nRj-ua-3Gr" firstAttribute="top" secondItem="qNw-o5-djg" secondAttribute="bottom" id="ijo-qk-LfK"/>
+                <constraint firstItem="qNw-o5-djg" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="oLw-3A-1DS"/>
+                <constraint firstItem="qNw-o5-djg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="wjG-et-bRK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-757" y="58"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="x" width="74" height="74"/>
+    </resources>
+</document>

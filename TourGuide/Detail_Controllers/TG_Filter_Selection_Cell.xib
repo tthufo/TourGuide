@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TG_Filter_Selection_Cell" rowHeight="68" id="WwU-am-cy0">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WwU-am-cy0" id="ox7-7L-zSQ">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="67.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LEW-8h-Xq1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="68" id="jBc-3P-6vA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="a0E-rm-997"/>
+                    </view>
+                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECU-j8-Snx" customClass="DropButton">
+                        <rect key="frame" x="11" y="14" width="298" height="39.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <state key="normal" title="  Phổ biến nhất">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="pListName" value="format"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                <color key="value" red="0.0046646948903799057" green="0.0046646948903799057" blue="0.0046646948903799057" alpha="0.9921875" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_d" translatesAutoresizingMaskIntoConstraints="NO" id="5ds-dd-0qI">
+                        <rect key="frame" x="279" y="21" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="Hx2-er-mj6"/>
+                            <constraint firstAttribute="width" constant="25" id="ckC-jq-OLB"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ECU-j8-Snx" secondAttribute="trailing" constant="11" id="2Ih-0L-dX0"/>
+                    <constraint firstAttribute="trailing" secondItem="5ds-dd-0qI" secondAttribute="trailing" constant="16" id="8W8-Fc-lo0"/>
+                    <constraint firstAttribute="trailing" secondItem="LEW-8h-Xq1" secondAttribute="trailing" id="JZj-Qk-c2A"/>
+                    <constraint firstItem="ECU-j8-Snx" firstAttribute="top" secondItem="ox7-7L-zSQ" secondAttribute="top" constant="14" id="Kpj-08-p0g"/>
+                    <constraint firstItem="LEW-8h-Xq1" firstAttribute="top" secondItem="ox7-7L-zSQ" secondAttribute="top" id="QDT-x3-N0y"/>
+                    <constraint firstItem="LEW-8h-Xq1" firstAttribute="leading" secondItem="ox7-7L-zSQ" secondAttribute="leading" id="YBd-J7-TVW"/>
+                    <constraint firstAttribute="bottom" secondItem="LEW-8h-Xq1" secondAttribute="bottom" id="ctd-iX-D8j"/>
+                    <constraint firstItem="ECU-j8-Snx" firstAttribute="leading" secondItem="ox7-7L-zSQ" secondAttribute="leading" constant="11" id="nbF-qo-i5b"/>
+                    <constraint firstAttribute="bottom" secondItem="ECU-j8-Snx" secondAttribute="bottom" constant="14" id="oq8-2h-k09"/>
+                    <constraint firstItem="5ds-dd-0qI" firstAttribute="top" secondItem="ox7-7L-zSQ" secondAttribute="top" constant="21" id="p9T-Th-e3E"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-113" y="41"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow_d" width="29" height="29"/>
+    </resources>
+</document>

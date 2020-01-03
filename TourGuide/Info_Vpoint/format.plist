@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>hilight</key>
+	<string>#B8B8B8</string>
+	<key>background</key>
+	<string>#FFFFFF</string>
+	<key>images</key>
+	<dict>
+		<key>104</key>
+		<string>ima</string>
+	</dict>
+	<key>items</key>
+	<dict>
+		<key>101</key>
+		<string>title</string>
+	</dict>
+	<key>nib</key>
+	<string>TG_Drop_Cell</string>
+	<key>identifier</key>
+	<string>TG_Drop_Cell</string>
+	<key>height</key>
+	<string>200</string>
+	<key>round</key>
+	<string>0</string>
+</dict>
+</plist>
