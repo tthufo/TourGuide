@@ -165,7 +165,7 @@ class TG_Default_Password_ViewController: UIViewController, UITextFieldDelegate 
         
         LTRequest.sharedInstance().didRequestInfo(dict as? [AnyHashable : Any], withCache: { (cache) in
                                                     
-        }) { (response, errorCode, error, isValid) in
+        }) { (response, errorCode, error, isValid, header) in
                         
             let isSuccess = response?.dictionize()[ response?.dictionize().response(forKey: "Succeeded") ?? false ? "Succeeded" : "success"] as! Bool
             

@@ -170,6 +170,8 @@ class TG_Information_Input_ViewController: UIViewController, UITextFieldDelegate
         
         nav.navigationDelegate = self
         
+        nav.modalPresentationStyle = .fullScreen
+        
         self.present(nav, animated: true, completion: {
             
         })

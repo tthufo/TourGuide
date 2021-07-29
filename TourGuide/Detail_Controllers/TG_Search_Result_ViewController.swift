@@ -117,7 +117,7 @@ class TG_Search_Result_ViewController: UIViewController {
         
         LTRequest.sharedInstance().didRequestInfo(request as! [AnyHashable : Any], withCache: { (cache) in
                 
-        }) { (response, errorCode, error, isValid) in
+        }) { (response, errorCode, error, isValid, header) in
             
             self.refreshHeader.endRefreshing()
             
@@ -194,7 +194,7 @@ class TG_Search_Result_ViewController: UIViewController {
                                                    "overrideAlert":1
             ], withCache: { (cache) in
 
-        }) { (response, errorCode, error, isValid) in
+        }) { (response, errorCode, error, isValid, header) in
 
             if errorCode != "200" {
                 self.showToast("Lỗi xảy ra, mời bạn thử lại", andPos: 0)
@@ -274,6 +274,8 @@ class TG_Search_Result_ViewController: UIViewController {
         
         mapView.filterInfo = filterInfo
         
+        mapView.modalPresentationStyle = .fullScreen
+
         mapView.isHide = (logged() && searchInfo.response(forKey: "isHide"))
         
         self.present(mapView, animated: true) {
@@ -285,6 +287,8 @@ class TG_Search_Result_ViewController: UIViewController {
         let filter = TG_Filter_ViewController()
         
         filter.filterDelegate = self
+        
+        filter.modalPresentationStyle = .fullScreen
         
         if filterInfo.allKeys.count != 0 {
             filter.prepInfo = filterInfo

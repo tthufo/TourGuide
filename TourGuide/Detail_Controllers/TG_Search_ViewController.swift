@@ -100,7 +100,7 @@ class TG_Search_ViewController: UIViewController, UITextFieldDelegate {
                                                    "overrideAlert":1
             ], withCache: { (cache) in
                 
-        }) { (response, errorCode, error, isValid) in
+        }) { (response, errorCode, error, isValid, header) in
             
             if errorCode != "200" {
                 return
@@ -123,7 +123,7 @@ class TG_Search_ViewController: UIViewController, UITextFieldDelegate {
                                                    "overrideAlert":1
             ], withCache: { (cache) in
                 
-        }) { (response, errorCode, error, isValid) in
+        }) { (response, errorCode, error, isValid, header) in
             
             if errorCode != "200" {
                 return

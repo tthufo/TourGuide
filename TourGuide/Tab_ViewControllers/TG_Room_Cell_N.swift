@@ -30,7 +30,7 @@ class TG_Room_Cell_N: UITableViewCell, UICollectionViewDelegate, UICollectionVie
                                                    "overrideAlert":1
             ], withCache: { (cache) in
                 
-        }) { (response, errorCode, error, isValid) in
+        }) { (response, errorCode, error, isValid, header) in
             
             if errorCode != "200" {
                 return

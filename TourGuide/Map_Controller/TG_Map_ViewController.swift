@@ -92,6 +92,8 @@ class TG_Map_ViewController: UIViewController {
         
         filter.isHide = self.isHide
         
+        filter.modalPresentationStyle = .fullScreen
+
         if filterInfo.allKeys.count != 0 {
             filter.prepInfo = filterInfo
         }

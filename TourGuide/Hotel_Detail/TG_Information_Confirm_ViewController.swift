@@ -75,7 +75,7 @@ class TG_Information_Confirm_ViewController: UIViewController {
                                                    "overrideAlert":1
             ], withCache: { (cache) in
                 
-        }) { (response, errorCode, error, isValid) in
+        }) { (response, errorCode, error, isValid, header) in
             
             if errorCode != "200" {
                 self.showToast("Lỗi xảy ra, mời bạn thử lại", andPos: 0)
@@ -119,7 +119,7 @@ class TG_Information_Confirm_ViewController: UIViewController {
                                                    "overrideAlert":1
             ], withCache: { (cache) in
                 
-        }) { (response, errorCode, error, isValid) in
+        }) { (response, errorCode, error, isValid, header) in
             
             if errorCode != "200" {
                 self.showToast("Lỗi xảy ra, mời bạn thử lại", andPos: 0)

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -90,6 +90,10 @@
 		FC572DC6212DD0C2005E51F6 /* TG_Information_Confirm_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC572DC4212DD0C2005E51F6 /* TG_Information_Confirm_ViewController.swift */; };
 		FC572DC7212DD0C2005E51F6 /* TG_Information_Confirm_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC572DC5212DD0C2005E51F6 /* TG_Information_Confirm_ViewController.xib */; };
 		FC5D2F2E214768AD00CA37EF /* TG_Booking_Cell_2.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC5D2F2D214768AD00CA37EF /* TG_Booking_Cell_2.xib */; };
+		FC6800BE26B08F0600546817 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6800BD26B08F0600546817 /* XMLReader.m */; };
+		FC6800C226B08F4B00546817 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6800C026B08F3A00546817 /* libxml2.2.tbd */; };
+		FC6800C426B08F5100546817 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6800C126B08F3A00546817 /* libxml2.tbd */; };
+		FC6800C726B0973200546817 /* TG_Root_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC6800C626B0973200546817 /* TG_Root_ViewController.xib */; };
 		FCB19129212B17950036C4D1 /* TG_Search_Result_Cell_1.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCB19128212B17950036C4D1 /* TG_Search_Result_Cell_1.xib */; };
 		FCE372F7213A426200F79D7A /* CustomField.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE372F6213A426200F79D7A /* CustomField.m */; };
 		FCEF5A5D213EEEC000F36C58 /* TG_Search_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEF5A5B213EEEC000F36C58 /* TG_Search_ViewController.swift */; };
@@ -188,6 +192,11 @@
 		FC572DC4212DD0C2005E51F6 /* TG_Information_Confirm_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TG_Information_Confirm_ViewController.swift; sourceTree = "<group>"; };
 		FC572DC5212DD0C2005E51F6 /* TG_Information_Confirm_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Information_Confirm_ViewController.xib; sourceTree = "<group>"; };
 		FC5D2F2D214768AD00CA37EF /* TG_Booking_Cell_2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Booking_Cell_2.xib; sourceTree = "<group>"; };
+		FC6800BC26B08F0600546817 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
+		FC6800BD26B08F0600546817 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
+		FC6800C026B08F3A00546817 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		FC6800C126B08F3A00546817 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		FC6800C626B0973200546817 /* TG_Root_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Root_ViewController.xib; sourceTree = "<group>"; };
 		FCB19128212B17950036C4D1 /* TG_Search_Result_Cell_1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TG_Search_Result_Cell_1.xib; sourceTree = "<group>"; };
 		FCE372F5213A426100F79D7A /* CustomField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomField.h; sourceTree = "<group>"; };
 		FCE372F6213A426200F79D7A /* CustomField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomField.m; sourceTree = "<group>"; };
@@ -200,6 +209,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC6800C426B08F5100546817 /* libxml2.tbd in Frameworks */,
+				FC6800C226B08F4B00546817 /* libxml2.2.tbd in Frameworks */,
 				F7B83CC0F08C2EFA90C0008A /* Pods_TourGuide.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,7 +236,10 @@
 		0467B14020F85E4100A2696C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				FC6800BC26B08F0600546817 /* XMLReader.h */,
+				FC6800BD26B08F0600546817 /* XMLReader.m */,
 				0467B14120F85EAA00A2696C /* TG_Root_ViewController.swift */,
+				FC6800C626B0973200546817 /* TG_Root_ViewController.xib */,
 				049F3AD52105C900007BE91E /* TG_Nav_ViewController.swift */,
 				048DC28D212FE6A50078C895 /* TG_Empty_Cell.xib */,
 			);
@@ -408,6 +422,8 @@
 		C5D2D2975DEC38B7F08129FF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FC6800C026B08F3A00546817 /* libxml2.2.tbd */,
+				FC6800C126B08F3A00546817 /* libxml2.tbd */,
 				2134AFF30CFF08A6CB1980FD /* Pods_TourGuide.framework */,
 			);
 			name = Frameworks;
@@ -480,6 +496,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0467B14720F85F6B00A2696C /* TG_Room_ViewController.xib in Resources */,
+				FC6800C726B0973200546817 /* TG_Root_ViewController.xib in Resources */,
 				0480D8F420FDCF1000266088 /* TG_Filter_ViewController.xib in Resources */,
 				04393E2720FC82C300A75264 /* TG_Search_Result_Cell.xib in Resources */,
 				047CFACF21096699003BAF1A /* TG_UserInfo_ViewController.xib in Resources */,
@@ -557,47 +574,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TourGuide/Pods-TourGuide-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
-				"${BUILT_PRODUCTS_DIR}/AVHexColor/AVHexColor.framework",
-				"${BUILT_PRODUCTS_DIR}/AllPod/AllPod.framework",
-				"${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework",
-				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
-				"${BUILT_PRODUCTS_DIR}/JSONKit-NoWarning/JSONKit_NoWarning.framework",
-				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
-				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
-				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
-				"${BUILT_PRODUCTS_DIR}/RangeSeekSlider/RangeSeekSlider.framework",
-				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyStarRatingView/SwiftyStarRatingView.framework",
-				"${BUILT_PRODUCTS_DIR}/TKFormTextField/TKFormTextField.framework",
-				"${BUILT_PRODUCTS_DIR}/Toast/Toast.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TourGuide/Pods-TourGuide-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AVHexColor.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AllPod.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppAuth.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONKit_NoWarning.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
-				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RangeSeekSlider.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyStarRatingView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TKFormTextField.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TourGuide/Pods-TourGuide-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TourGuide/Pods-TourGuide-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TourGuide/Pods-TourGuide-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -627,6 +613,7 @@
 				FC0FCBCB214849FF007242D8 /* TG_Default_Password_ViewController.swift in Sources */,
 				04306CE121008AE300CF9AB8 /* TG_Login_ViewController.swift in Sources */,
 				FC572DC6212DD0C2005E51F6 /* TG_Information_Confirm_ViewController.swift in Sources */,
+				FC6800BE26B08F0600546817 /* XMLReader.m in Sources */,
 				0431B1E221009C790035FEA6 /* TKDataValidator.swift in Sources */,
 				048271882100727200E0E954 /* CalendarDateRangePickerViewController.swift in Sources */,
 				0467B15220F85FBE00A2696C /* TG_User_ViewController.swift in Sources */,
@@ -799,6 +786,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vn.crystalhoildays;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "4a3ab824-7280-47fb-8041-ce1df749ae95";
@@ -826,6 +814,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vn.crystalhoildays;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "93445751-eb7f-42f5-ac10-a82bbbd829ee";

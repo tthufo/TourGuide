@@ -11,6 +11,8 @@ import UIKit
 class Information: NSObject {
     @objc static var token: String?
     
+    @objc static var check: String?
+    
     static var userInfo: NSDictionary?
     
     static var start: Date!

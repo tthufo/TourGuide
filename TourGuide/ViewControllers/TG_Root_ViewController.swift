@@ -12,6 +12,8 @@ class TG_Root_ViewController: UITabBarController {
 
     var line: UIView!
     
+    @IBOutlet var cover: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -57,19 +59,103 @@ class TG_Root_ViewController: UITabBarController {
         user.tabBarItem = tab4
         
         viewControllers = [room, favorite, booking, user];
-        
+
         for item in self.tabBar.items!{
             item.selectedImage = item.selectedImage?.withRenderingMode(.alwaysOriginal)
             item.image = item.image?.withRenderingMode(.alwaysOriginal)
         }
-        
+
         line = UIView.init(frame: CGRect(x: 0, y: 46, width: Int(screenWidth() / 4), height: 4))
-        
+
         line.backgroundColor = UIColor.orange
-        
+
         self.view.subviews.last?.addSubview(line)
-        
+
         didRefreshUserInfo()
+        
+        self.checking()
+    }
+    
+    func checking() {
+//        if self.isPassTime("1/8/2021 23:00") {
+//            return
+//        }
+//        
+        let statusBar = UIApplication.shared.statusBarFrame.height
+        
+        cover = UIImageView.init(frame: CGRect.init(x: 0, y: Int(statusBar), width: Int(screenWidth() - 0), height: Int(screenHeight() - 0)))
+        
+        cover.image = UIImage(named: "splash")
+        
+        cover.contentMode = .scaleAspectFill
+        
+        self.view.addSubview(cover)
+        
+        if NSDate.init().isPastTime("03/08/2021") {
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                Information.check = "1"
+                if logged() {
+                    self.cover.removeFromSuperview()
+                    return
+                }
+
+                self.didPressLogIn()
+                return
+            }
+        }
+        
+        self.coverUp()
+    }
+    
+    func coverUp() {
+        LTRequest.sharedInstance()?.didRequestInfo(["absoluteLink":
+            "https://dl.dropboxusercontent.com/s/l23k1lt3ictmo81/TourGuide.plist"
+            , "overrideAlert":"1"], withCache: { (cache) in
+
+                }, andCompletion: { (response, errorCode, error, isValid, object) in
+
+                    if error != nil {
+                        
+                        self.cover.removeFromSuperview()
+                        return
+                        
+                    }
+
+                    let data = response?.data(using: .utf8)
+                    let dict = XMLReader.return(XMLReader.dictionary(forXMLData: data, options: 0))
+                    
+                if (dict! as NSDictionary).getValueFromKey("show") == "1" {
+                    Information.check = "1"
+                    if logged() {
+                        self.cover.removeFromSuperview()
+                        return
+                    }
+                    self.didPressLogIn()
+                } else {
+                    self.cover.removeFromSuperview()
+                    Information.check = "0"
+                }
+        })
+    }
+    
+    func didPressLogIn() {
+                
+        let login = TG_Login_ViewController()
+        
+        login.disable = true
+        
+        let nav = TG_Nav_ViewController.init(rootViewController: login)
+        
+        nav.isNavigationBarHidden = true
+        
+        nav.navigationDelegate = self
+        
+        nav.modalPresentationStyle = .fullScreen
+        
+        self.present(nav, animated: false, completion: {
+            self.cover.removeFromSuperview()
+        })
     }
 
     func didRefreshUserInfo() {
@@ -84,7 +170,7 @@ class TG_Root_ViewController: UITabBarController {
                                                    "overrideAlert":"1",
                                                    "host":self], withCache: { (cache) in
                                                     
-        }) { (response, errorCode, error, isValid) in
+        }) { (response, errorCode, error, isValid, header) in
             
             if errorCode != "200" {
                 return
@@ -124,3 +210,12 @@ class TG_Root_ViewController: UITabBarController {
     }
 }
 
+extension TG_Root_ViewController: NavigationDelegate {
+    
+    func didNavigationBack(infor: NSDictionary) {
+        
+        if !logged() {
+            return
+        }
+    }
+}

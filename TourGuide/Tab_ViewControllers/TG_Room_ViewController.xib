@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,10 +21,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EGS-pg-qVN">
-                    <rect key="frame" x="0.0" y="20" width="320" height="64"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logos" translatesAutoresizingMaskIntoConstraints="NO" id="QVL-8Q-OT3">
-                            <rect key="frame" x="69" y="24" width="183" height="38"/>
+                            <rect key="frame" x="68.5" y="24" width="183" height="38"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="38" id="48r-uT-gV0"/>
                                 <constraint firstAttribute="width" constant="183" id="gmG-bP-kzf"/>
@@ -44,7 +42,7 @@
                     </userDefinedRuntimeAttributes>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lfc-Tf-FRv">
-                    <rect key="frame" x="0.0" y="84" width="320" height="396"/>
+                    <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="UD9-Em-Sec"/>
@@ -70,11 +68,11 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="164"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CP8-Vc-4Tc" id="9AW-Fb-OxX">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="163.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="164"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fiX-10-5EW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="145"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="145.5"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="10" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KrM-tU-4ku">
                                 <rect key="frame" x="8" y="8" width="106" height="126"/>
@@ -331,6 +329,6 @@
     <resources>
         <image name="ic_key" width="33" height="33"/>
         <image name="ic_users2" width="33" height="33"/>
-        <image name="logos" width="221" height="55"/>
+        <image name="logos" width="221.5" height="55.5"/>
     </resources>
 </document>

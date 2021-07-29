@@ -119,8 +119,8 @@ class TG_Hotel_Detail_ViewController: UIViewController, FSPagerViewDataSource,FS
                                                    "overrideAlert":1
             ], withCache: { (cache) in
                 
-        }) { (response, errorCode, error, isValid) in
-            
+        }) { (response, errorCode, error, isValid, header) in
+
             if errorCode != "200" {
                 self.showToast("Lỗi xảy ra, mời bạn thử lại", andPos: 0)
                 

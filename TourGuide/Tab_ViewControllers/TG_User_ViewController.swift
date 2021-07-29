@@ -199,6 +199,8 @@ extension TG_User_ViewController: UITableViewDataSource, UITableViewDelegate {
                         
                         nav.navigationDelegate = self
                         
+                        nav.modalPresentationStyle = .fullScreen
+
                         self.present(nav, animated: true, completion: {
                             
                         })
@@ -208,6 +210,8 @@ extension TG_User_ViewController: UITableViewDataSource, UITableViewDelegate {
     
                         nav.isNavigationBarHidden = true
     
+                        nav.modalPresentationStyle = .fullScreen
+
                         self.present(nav, animated: true) {
     
                         }
@@ -292,6 +296,24 @@ extension TG_User_ViewController: UITableViewDataSource, UITableViewDelegate {
             didChangeState(isLogIn: logged())
             
             tableView.didScrolltoTop(true)
+            
+            if Information.check == "1" {
+                let login = TG_Login_ViewController()
+
+                let nav = TG_Nav_ViewController.init(rootViewController: login)
+                
+                login.disable = true
+
+                nav.isNavigationBarHidden = true
+                
+                nav.navigationDelegate = self
+                
+                nav.modalPresentationStyle = .fullScreen
+
+                self.present(nav, animated: true, completion: {
+                    
+                })
+            }
         }
     }
 }

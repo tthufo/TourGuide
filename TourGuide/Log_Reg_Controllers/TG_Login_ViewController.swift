@@ -18,6 +18,10 @@ protocol LoginDelegate:class {
 class TG_Login_ViewController: UIViewController, UITextFieldDelegate {
 
     weak var delegate: LoginDelegate?
+    
+    var disable: Bool = false
+
+    @IBOutlet var X: UIButton!
 
     @IBOutlet var tableView: UITableView!
     
@@ -93,6 +97,8 @@ class TG_Login_ViewController: UIViewController, UITextFieldDelegate {
             
             self.navigationController?.pushViewController(changePass, animated: true)
         }
+        
+        X.isHidden = disable
     }
 
     func submitEnable(enable: Bool) {
@@ -290,7 +296,7 @@ class TG_Login_ViewController: UIViewController, UITextFieldDelegate {
                                                    "overrideAlert":"1",
                                                    "host":self], withCache: { (cache) in
             
-        }) { (response, errorCode, error, isValid) in
+        }) { (response, errorCode, error, isValid, header) in
             self.hideSVHUD()
             
             if errorCode != "200" {

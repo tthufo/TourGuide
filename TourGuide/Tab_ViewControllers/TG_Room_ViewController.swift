@@ -82,6 +82,9 @@ class TG_Room_ViewController: UIViewController {
         } else {
             dateRangePickerViewController.selectedStartDate = dateRange["start"] as? Date
         }
+        
+        dateRangePickerViewController.modalPresentationStyle = .fullScreen
+        
         self.navigationController?.present(dateRangePickerViewController, animated: true, completion: nil)
     }
     
@@ -392,6 +395,8 @@ extension TG_Room_ViewController: UITableViewDataSource, UITableViewDelegate {
                 searchView.searchDelegate = self
                 
                 searchView.keyWord = keyWord
+                
+                searchView.modalPresentationStyle = .fullScreen
                 
                 self.present(searchView, animated: true, completion: {
                     

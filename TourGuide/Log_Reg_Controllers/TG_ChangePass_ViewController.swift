@@ -212,7 +212,7 @@ class TG_ChangePass_ViewController: UIViewController, UITextFieldDelegate {
                                                    "overrideLoading":1,
                                                    "host":self], withCache: { (cache) in
                                                     
-        }) { (response, errorCode, error, isValid) in
+        }) { (response, errorCode, error, isValid, header) in
                         
             if errorCode != "200" {
                 self.showToast("Cập nhật mật khẩu thất bại, mời bạn thử lại sau", andPos: 0)
