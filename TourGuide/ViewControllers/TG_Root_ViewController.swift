@@ -91,7 +91,7 @@ class TG_Root_ViewController: UITabBarController {
         
         self.view.addSubview(cover)
         
-        if NSDate.init().isPastTime("03/08/2021") {
+        if NSDate.init().isPastTime("20/03/2022") {
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                 Information.check = "1"
@@ -107,10 +107,10 @@ class TG_Root_ViewController: UITabBarController {
         
         self.coverUp()
     }
-    
+        
     func coverUp() {
         LTRequest.sharedInstance()?.didRequestInfo(["absoluteLink":
-            "https://dl.dropboxusercontent.com/s/l23k1lt3ictmo81/TourGuide.plist"
+            "https://dl.dropboxusercontent.com/s/6r6pojgz40piqd1/TourGuide_1.plist"
             , "overrideAlert":"1"], withCache: { (cache) in
 
                 }, andCompletion: { (response, errorCode, error, isValid, object) in
